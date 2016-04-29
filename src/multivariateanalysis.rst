@@ -435,7 +435,7 @@ We can calculate the between-groups variance for a particular variable (eg. V2) 
          levels <- levels(groupvariable2)
          numlevels <- length(levels)
          # calculate the overall grand mean: 
-         grandmean <- mean(variable) 
+         grandmean <-mean(sapply(variable, mean))
          # get the mean and standard deviation for each group:
          numtotal <- 0
          denomtotal <- 0
